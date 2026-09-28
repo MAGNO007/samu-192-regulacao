@@ -742,6 +742,128 @@ body.app-open{
 @media(max-width:760px){.medical-stepper{grid-template-columns:1fr}.medical-resource-grid{grid-template-columns:1fr 1fr}.medical-step-text small{white-space:normal}}
 @media(max-width:500px){.medical-resource-grid{grid-template-columns:1fr}.medical-stage{padding:13px}}
 
+
+/* ===== TARM • UX DESKTOP COMPACTO ===== */
+@media (min-width: 951px){
+  main{padding:14px 18px 18px}
+  .page-head{margin-bottom:12px;align-items:flex-start}
+  .page-head h2{font-size:21px}
+  .page-head p{margin-top:3px;font-size:12px}
+
+  .tarm-occ-form{padding:13px 14px 14px}
+  .tarm-occ-form .section-head{margin-bottom:8px}
+  .tarm-occ-form .section-head h3{font-size:16px}
+  .tarm-occ-form .section-subtitle{font-size:10px;margin-top:2px}
+  .tarm-type-actions{
+    margin:0 0 11px;
+    padding:0 0 11px;
+    gap:7px;
+    flex-wrap:nowrap;
+  }
+  .tarm-type-actions .btn{
+    flex:1 1 0;
+    white-space:nowrap;
+    padding:8px 8px;
+    font-size:11px;
+    min-width:0;
+  }
+
+  .tarm-form-columns{
+    grid-template-columns:minmax(0,1.42fr) minmax(330px,.86fr);
+    gap:12px;
+    align-items:start;
+  }
+  .tarm-form-panel{
+    padding:12px 13px;
+    border-radius:13px;
+  }
+  .tarm-patient-panel{
+    background:#fffdfb;
+    position:sticky;
+    top:82px;
+  }
+  .tarm-panel-title{
+    margin-bottom:9px;
+    padding-bottom:8px;
+    gap:8px;
+  }
+  .tarm-panel-title.compact{margin-bottom:7px;padding-bottom:7px}
+  .tarm-panel-title h3{font-size:13px}
+  .tarm-panel-title p{font-size:9px;margin-top:2px}
+  .tarm-panel-icon{width:28px;height:28px;border-radius:8px;font-size:12px}
+
+  .tarm-form-panel .form-grid{gap:7px 9px}
+  .tarm-form-panel label{
+    margin-top:2px;
+    margin-bottom:4px;
+    font-size:10px;
+  }
+  .tarm-form-panel input,
+  .tarm-form-panel select{
+    height:38px;
+    min-height:38px;
+    padding:0 10px;
+    border-radius:9px;
+    font-size:11px;
+    margin-bottom:0;
+  }
+  .tarm-form-panel textarea{
+    min-height:58px;
+    height:58px;
+    padding:8px 10px;
+    border-radius:9px;
+    font-size:11px;
+    resize:vertical;
+    margin-bottom:0;
+  }
+  .field-hint{font-size:9px;line-height:1.25;margin-top:3px}
+
+  .tarm-patient-panel .actions{margin-top:8px !important}
+  .tarm-patient-panel .actions .btn{font-size:10px;padding:7px 9px}
+  .tarm-submit-box{margin-top:10px;padding-top:9px}
+  .tarm-submit-box > label{font-size:10px;margin-top:0}
+  .tarm-submit-box .field-hint{margin-bottom:6px}
+  #tarmFormMessage{margin:7px 0;font-size:10px;padding:8px 9px}
+  .tarm-submit-btn{height:42px;font-size:11px;margin-top:0}
+}
+
+@media (min-width: 951px) and (max-height: 820px){
+  .topbar{height:64px}
+  .layout{min-height:calc(100vh - 64px)}
+  main{padding-top:10px}
+  .tarm-form-panel{padding:10px 12px}
+  .tarm-panel-title{margin-bottom:7px;padding-bottom:6px}
+  .tarm-form-panel .form-grid{gap:5px 8px}
+  .tarm-form-panel input,
+  .tarm-form-panel select{height:35px;min-height:35px}
+  .tarm-form-panel textarea{height:50px;min-height:50px}
+  .tarm-patient-panel .actions{margin-top:6px !important}
+  .tarm-submit-box{margin-top:7px;padding-top:7px}
+  #tarmFormMessage{margin:5px 0;padding:7px 8px}
+  .tarm-submit-btn{height:38px}
+}
+
+@media(max-width:950px){
+  .tarm-patient-panel{position:static}
+}
+
+/* UX — Frota / Recursos para todos os perfis */
+.fleet-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
+.fleet-hero h2{margin:2px 0 4px}.fleet-hero p{margin:0;color:var(--muted);font-size:12px}
+.fleet-profile-note{display:flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid #eadfd8;background:#fff;border-radius:11px;font-size:11px;color:#555;white-space:nowrap}
+.fleet-kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.fleet-kpi{min-height:88px;padding:13px 14px;display:flex;align-items:center;justify-content:space-between}
+.fleet-kpi small{font-size:10px}.fleet-kpi .n{font-size:24px;font-weight:900;line-height:1.05;margin:4px 0}.fleet-kpi .sub{font-size:10px;color:var(--muted)}
+.fleet-kpi-icon{width:38px;height:38px;border-radius:11px;background:#fff1ed;display:grid;place-items:center;font-size:19px}
+.fleet-content{display:grid;grid-template-columns:minmax(250px,.7fr) minmax(0,1.8fr);gap:14px;align-items:start}
+.fleet-side-card,.fleet-table-card{min-width:0}.fleet-side-card{padding:15px}.fleet-side-card h3,.fleet-table-card h3{margin:0;font-size:14px}.fleet-side-card p,.fleet-table-card .section-subtitle{font-size:10px}
+.fleet-status-list{display:grid;gap:8px;margin-top:12px}.fleet-status-row{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border:1px solid #edf0f2;border-radius:10px;background:#fafbfc;font-size:11px}.fleet-status-row b{font-size:12px}
+.fleet-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.fleet-actions .btn{flex:1 1 140px}
+.fleet-table-card{overflow:hidden}.fleet-table-card .table-wrap{max-height:430px;overflow:auto}.fleet-table-card table{min-width:720px}.fleet-readonly{font-size:10px;color:var(--muted);margin-top:8px}
+.fleet-vtr-highlight{margin-top:12px;padding:11px;border:1px solid #f0d9d3;background:#fff8f5;border-radius:11px}.fleet-vtr-highlight b{display:block;margin-bottom:3px}
+@media(max-width:1050px){.fleet-kpis{grid-template-columns:repeat(3,1fr)}.fleet-content{grid-template-columns:1fr}}
+@media(max-width:650px){.fleet-hero{align-items:flex-start;flex-direction:column}.fleet-profile-note{white-space:normal}.fleet-kpis{grid-template-columns:repeat(2,1fr)}.fleet-kpi{min-height:78px}.fleet-table-card .table-wrap{max-height:none}}
+
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -754,6 +876,76 @@ body.app-open{
     { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } }
   );
 </script>
+
+<style>
+/* ===== DASHBOARD UX • TODOS OS PERFIS ===== */
+.dashboard-ux{min-width:0}
+.dashboard-hero{padding:14px 16px!important;margin-bottom:12px!important;border-radius:14px!important;min-height:72px}
+.dashboard-hero h2{font-size:21px!important;letter-spacing:-.3px}
+.dashboard-hero p{font-size:11px!important;margin-top:3px!important}
+.hero-meta{gap:6px!important}
+.hero-chip{padding:6px 9px!important;font-size:10px!important;border-radius:9px!important}
+.dashboard-page-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.dashboard-page-actions>div:first-child{min-width:0}
+.dashboard-page-actions h3{font-size:14px!important}
+.dashboard-page-actions p{font-size:10px!important;margin:3px 0 0!important;color:var(--muted)}
+.dashboard-admin-actions{gap:7px!important}
+.dashboard-admin-actions .btn{padding:8px 10px!important;font-size:11px!important}
+.dashboard-kpis{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px!important;margin-bottom:12px}
+.dashboard-kpis .card{min-height:88px;padding:13px!important;border-radius:13px!important}
+.dashboard-kpis .kpi .n{font-size:24px!important;line-height:1.05;margin:4px 0 3px}
+.dashboard-kpis .kpi small{font-size:9px!important;line-height:1.2}
+.dashboard-kpis .kpi-icon{width:36px;height:36px;border-radius:10px;font-size:15px}
+.dashboard-flow{margin-top:0!important;margin-bottom:12px!important;padding:13px 15px!important;border-radius:13px!important}
+.dashboard-flow .section-head{margin-bottom:5px!important}
+.dashboard-flow .section-head h3{font-size:13px!important;margin-bottom:0!important}
+.dashboard-flow .section-subtitle{font-size:9px!important}
+.dashboard-flow .timeline{margin:8px 0 2px!important}
+.dashboard-flow .step span{font-size:9px!important;line-height:1.15}
+.dashboard-flow .step-dot{width:25px;height:25px;font-size:10px}
+.dashboard-flow .step:before{top:12px;height:3px}
+.dashboard-bottom{display:grid!important;grid-template-columns:minmax(0,1.55fr) minmax(280px,.65fr);gap:12px!important;align-items:start}
+.dashboard-bottom>.section{margin-top:0!important}
+.dashboard-bottom>.card{padding:13px!important;border-radius:13px!important}
+.dashboard-bottom .section-head{margin-bottom:8px!important}
+.dashboard-bottom .section-head h3{font-size:13px!important;margin-bottom:0!important}
+.dashboard-bottom .section-subtitle{font-size:9px!important}
+.dashboard-bottom .table-wrap{max-height:235px;overflow:auto}
+.dashboard-bottom table{min-width:650px}
+.dashboard-bottom th,.dashboard-bottom td{padding:8px 9px!important;font-size:10px!important}
+.dashboard-bottom th{font-size:9px!important}
+.dashboard-bottom .status-list{gap:6px!important;margin-bottom:8px!important}
+.dashboard-bottom .status-list>div{padding:8px 9px!important;font-size:10px!important}
+.dashboard-bottom .status-list b{font-size:10px!important}
+.dashboard-bottom .quick-actions{gap:6px!important}
+.dashboard-bottom .quick-action{padding:9px!important;min-height:40px!important;border-radius:9px!important;font-size:11px!important}
+.dashboard-bottom .quick-action span{font-size:10px!important}
+.dashboard-bottom .quick-action small{font-size:8px!important}
+.dashboard-bottom .btn{padding:7px 9px!important;font-size:10px!important}
+.dashboard-online-strip{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.dashboard-online-strip span{font-size:9px;padding:5px 7px;border-radius:999px;background:#f7fafc;border:1px solid var(--border);color:#64737d;font-weight:800}
+@media(max-width:1050px){
+ .dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .dashboard-bottom{grid-template-columns:1fr!important}
+}
+@media(max-width:700px){
+ .dashboard-page-actions{align-items:stretch;flex-direction:column}
+ .dashboard-admin-actions{width:100%;justify-content:stretch!important}
+ .dashboard-admin-actions .btn{flex:1 1 140px}
+ .dashboard-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .dashboard-hero{padding:12px!important}
+ .hero-meta{width:100%;justify-content:flex-start!important}
+ .dashboard-bottom .table-wrap{max-height:220px}
+}
+@media(max-width:480px){
+ .dashboard-kpis{grid-template-columns:1fr 1fr!important;gap:7px!important}
+ .dashboard-kpis .card{min-height:82px;padding:10px!important}
+ .dashboard-kpis .kpi .n{font-size:21px!important}
+ .dashboard-flow{padding:10px!important}
+ .dashboard-flow .step span{font-size:8px!important}
+}
+</style>
+
 </head>
 <body>
 
@@ -868,6 +1060,7 @@ async function verificarConexaoSupabase(){
   }
 }
 window.addEventListener('DOMContentLoaded',verificarConexaoSupabase);
+window.addEventListener('DOMContentLoaded',()=>{ setTimeout(restoreSupabaseSession,150); });
 </script>
 <script>
 const KEY='samu_regulacao_demo_v1';
@@ -1096,6 +1289,67 @@ async function login(){
     if(btn){ btn.disabled=false; btn.textContent=originalText; }
   }
 }
+async function restoreSupabaseSession(){
+  // Restaura automaticamente a sessão persistida pelo Supabase após F5/recarregamento.
+  // Não exige que o usuário informe novamente o perfil: usamos o perfil salvo em public.profiles.
+  try{
+    if(!window.samuSupabase) return;
+    const {data:authData,error:authError}=await window.samuSupabase.auth.getSession();
+    if(authError) throw authError;
+    const authSession=authData?.session;
+    if(!authSession?.user) return;
+
+    const {data:profileData,error:profileError}=await window.samuSupabase.rpc('get_my_profile');
+    if(profileError) throw profileError;
+    const profile=Array.isArray(profileData)?profileData[0]:profileData;
+    if(!profile || !profile.ativo){
+      await window.samuSupabase.auth.signOut();
+      return;
+    }
+
+    session={
+      role:profile.perfil,
+      user:profile.nome || authSession.user.email,
+      email:authSession.user.email,
+      userId:authSession.user.id,
+      profile,
+      vehicle:profile.perfil==='VTR' ? (profile.matricula || null) : null
+    };
+
+    const loginScreen=document.getElementById('login');
+    const appScreen=document.getElementById('app');
+    if(loginScreen){
+      loginScreen.classList.add('hidden');
+      loginScreen.setAttribute('aria-hidden','true');
+      loginScreen.style.display='none';
+    }
+    if(appScreen){
+      appScreen.classList.remove('hidden');
+      appScreen.style.display='block';
+    }
+    document.body.classList.add('app-open');
+
+    const rolePill=document.getElementById('rolePill');
+    const userName=document.getElementById('userName');
+    if(rolePill) rolePill.textContent={TARM:'TARM',MEDICO:'MÉDICO REGULADOR',RO:'RO',VTR:'VTR / AMBULÂNCIA',ADMIN:'ADMINISTRADOR'}[profile.perfil] || profile.perfil;
+    if(userName) userName.textContent=profile.nome || authSession.user.email;
+
+    // Atualiza presença sem bloquear a restauração da sessão.
+    window.samuSupabase.from('profiles')
+      .update({online:true,atualizado_em:new Date().toISOString()})
+      .eq('id',authSession.user.id)
+      .then(({error})=>{if(error) console.warn('Não foi possível atualizar presença:',error);})
+      .catch(e=>console.warn('Falha na atualização de presença:',e));
+
+    startSessionUi();
+    render();
+  }catch(err){
+    console.warn('Não foi possível restaurar a sessão:',err);
+    // Só volta para o login se realmente não houver uma sessão válida.
+    session=null;
+  }
+}
+
 async function logout(){
   try{
     if(session && session.userId && window.samuSupabase){
@@ -1213,14 +1467,14 @@ function dashboard(){
    <div><div class="eyebrow">SAMU 192 • CENTRAL DE REGULAÇÃO</div><h2>Dashboard operacional</h2><p>${roleDescription}</p></div>
    <div class="hero-meta"><span class="hero-chip success">● Sistema online</span><span class="hero-chip">${esc(roleName)}</span></div>
  </div>
- <div class="page-head"><div><h3 style="margin:0">Resumo operacional</h3><p>Visão unificada da Central. As ferramentas exibidas respeitam o perfil conectado.</p></div>${action}</div>
- <div class="grid">
+ <div class="page-head dashboard-page-actions"><div><h3 style="margin:0">Resumo operacional</h3><p>Visão unificada da Central. As ferramentas exibidas respeitam o perfil conectado.</p></div>${action}</div>
+ <div class="grid dashboard-kpis">
    ${kpi('☎','Ocorrências',total,'Total registradas')}
    ${kpi('◉','Em andamento',abertas,`${recebidas} aguardando recepção/regulação`)}
    ${kpi('⚕','Em regulação',med,'Com Médico Regulador')}
    ${kpi('🚑','VTR acionada',acion,`${disponiveis} recursos disponíveis`)}
  </div>
- <div class="section card">
+ <div class="section card dashboard-flow">
    <div class="section-head"><div><h3>Fluxo operacional</h3><p class="section-subtitle">Acompanhe as principais etapas do atendimento.</p></div><span class="live-dot">● AO VIVO</span></div>
    <div class="timeline">
     ${step('1','TARM','RECEPÇÃO',state.occ.some(o=>o.status))}
@@ -1229,7 +1483,7 @@ function dashboard(){
     ${step('4','MÉDICO','ENCERRAMENTO',state.occ.some(o=>o.status==='ENCERRADA'))}
    </div>
  </div>
- <div class="dashboard-columns">
+ <div class="dashboard-columns dashboard-bottom">
    <div class="section card"><div class="section-head"><div><h3>Últimas ocorrências</h3><p class="section-subtitle">Registros mais recentes da Central.</p></div><button class="btn btn-light" onclick="showPage('ocorrencias')">Ver todas</button></div>${miniTable()}</div>
    <div class="section card operational-card"><div class="section-head"><div><h3>Status da Central</h3><p class="section-subtitle">Indicadores do ambiente operacional.</p></div></div>
      <div class="status-list">
@@ -1331,28 +1585,54 @@ function getGps(){
  },{enableHighAccuracy:true,timeout:10000,maximumAge:5000});
 }
 function fleet(){
- if(session?.role!=='ADMIN'){
-   return `<div class="page-head"><div><h2>Frota / Recursos</h2><p>Consulta operacional da frota.</p></div></div><div class="card"><div class="alert alert-info">A frota pode ser consultada pelos perfis operacionais. O gerenciamento é exclusivo do administrador.</div><div id="resourcesTable" class="empty">Carregando recursos...</div></div>`;
- }
- return `<div class="page-head"><div><h2>Frota / Recursos</h2><p>Gerenciamento das unidades terrestres, aéreas e aquáticas.</p></div><button class="btn btn-blue" onclick="openResourceForm()">＋ Novo recurso</button></div>
- <div class="grid" id="resourceKpis"><div class="card kpi"><div><small>USA</small><div class="n">-</div><small>Carregando...</small></div><div class="kpi-icon">🚑</div></div><div class="card kpi"><div><small>USB</small><div class="n">-</div><small>Carregando...</small></div><div class="kpi-icon">🚑</div></div><div class="card kpi"><div><small>Helicópteros</small><div class="n">-</div><small>Carregando...</small></div><div class="kpi-icon">🚁</div></div><div class="card kpi"><div><small>Aviões</small><div class="n">-</div><small>Carregando...</small></div><div class="kpi-icon">✈️</div></div></div>
- <div class="section card"><div class="section-head"><div><h3>Recursos cadastrados</h3><p class="section-subtitle">Controle de disponibilidade e situação operacional.</p></div></div><div id="resourcesTable" class="empty">Carregando recursos...</div></div>`;
+ const roleNames={ADMIN:'Administrador',TARM:'TARM • Recepção',MEDICO:'Médico Regulador',RO:'RO • Rádio Operador',VTR:'VTR • Equipe'};
+ const role=roleNames[session?.role]||session?.role||'Usuário';
+ const canManage=session?.role==='ADMIN';
+ const isVtr=session?.role==='VTR';
+ return `<div class="fleet-hero">
+   <div><div class="eyebrow">SAMU 192 • RECURSOS OPERACIONAIS</div><h2>Frota / Recursos</h2><p>Consulte em um único painel a disponibilidade e a situação operacional dos recursos da Central.</p></div>
+   <div class="fleet-profile-note">● ${esc(role)} ${canManage?'• gerenciamento habilitado':'• consulta operacional'}</div>
+ </div>
+ <div class="fleet-kpis" id="resourceKpis">
+   ${['USA','USB','HELICOPTERO','AERONAVE','AMBULANCHA'].map((t,i)=>`<div class="card fleet-kpi"><div><small>${['USA','USB','HELICÓPTEROS','AERONAVES','AMBULANCHA'][i]}</small><div class="n">-</div><div class="sub">Carregando...</div></div><div class="fleet-kpi-icon">${['🚑','🚑','🚁','✈️','🚤'][i]}</div></div>`).join('')}
+ </div>
+ <div class="fleet-content">
+   <div class="card fleet-side-card">
+     <h3>Resumo operacional</h3><p class="section-subtitle">Situação atual da frota.</p>
+     <div class="fleet-status-list" id="fleetSummary"><div class="fleet-status-row"><span>Disponíveis</span><b>—</b></div><div class="fleet-status-row"><span>Em ocorrência</span><b>—</b></div><div class="fleet-status-row"><span>Manutenção</span><b>—</b></div><div class="fleet-status-row"><span>Inoperantes</span><b>—</b></div></div>
+     ${isVtr&&session.vehicle?`<div class="fleet-vtr-highlight"><b>🚑 Minha VTR</b><span>${esc(session.vehicle)}</span><div class="fleet-readonly">Consulte o status desta unidade na lista ao lado.</div></div>`:''}
+     <div class="fleet-actions">
+       <button class="btn btn-light" onclick="showPage('ocorrencias')">☎ Ver ocorrências</button>
+       ${isVtr?'<button class="btn btn-blue" onclick="showPage(\'minhavtr\')">🚑 Minha VTR</button>':''}
+       ${canManage?'<button class="btn btn-blue" onclick="openResourceForm()">＋ Novo recurso</button>':''}
+     </div>
+     ${canManage?'<div class="fleet-readonly">Como administrador, você pode cadastrar e editar recursos. Os demais perfis possuem acesso somente à consulta operacional.</div>':'<div class="fleet-readonly">A consulta é somente leitura para este perfil.</div>'}
+   </div>
+   <div class="card fleet-table-card">
+     <div class="section-head"><div><h3>Recursos da Central</h3><p class="section-subtitle">Status atualizado diretamente no Supabase.</p></div><span class="live-dot">● AO VIVO</span></div>
+     <div id="resourcesTable" class="empty">Carregando recursos...</div>
+   </div>
+ </div>`;
 }
+
 async function loadResources(){
  const box=document.getElementById('resourcesTable');
  if(!box||!window.samuSupabase)return;
  const {data,error}=await window.samuSupabase.from('resources').select('id,codigo,tipo,descricao,status,equipe,ativo,criado_em').order('codigo');
  if(error){box.innerHTML=`<div class="alert alert-warn">Não foi possível carregar a frota: ${esc(error.message)}</div>`;return;}
  const rows=data||[];
- const types=['USA','USB','HELICOPTERO','AERONAVE'];
+ const types=['USA','USB','HELICOPTERO','AERONAVE','AMBULANCHA'];
+ const labels={USA:'USA',USB:'USB',HELICOPTERO:'HELICÓPTEROS',AERONAVE:'AERONAVES',AMBULANCHA:'AMBULANCHA'};
+ const icons={USA:'🚑',USB:'🚑',HELICOPTERO:'🚁',AERONAVE:'✈️',AMBULANCHA:'🚤'};
  const k=document.getElementById('resourceKpis');
- if(k){
-   const labels={USA:'USA',USB:'USB',HELICOPTERO:'Helicópteros',AERONAVE:'Aviões'};
-   k.innerHTML=types.map((t,i)=>{const all=rows.filter(r=>r.tipo===t);const disp=all.filter(r=>r.status==='DISPONIVEL'&&r.ativo).length;const icons=['🚑','🚑','🚁','✈️'];return `<div class="card kpi"><div><small>${labels[t]}</small><div class="n">${all.length}</div><small>${disp} disponíveis</small></div><div class="kpi-icon">${icons[i]}</div></div>`}).join('');
- }
+ if(k){k.innerHTML=types.map(t=>{const all=rows.filter(r=>r.tipo===t);const disp=all.filter(r=>r.status==='DISPONIVEL'&&r.ativo).length;return `<div class="card fleet-kpi"><div><small>${labels[t]}</small><div class="n">${all.length}</div><div class="sub">${disp} disponíveis</div></div><div class="fleet-kpi-icon">${icons[t]}</div></div>`}).join('');}
+ const summary=document.getElementById('fleetSummary');
+ if(summary){const counts={DISPONIVEL:0,EM_OCORRENCIA:0,EM_MANUTENCAO:0,INOPERANTE:0};rows.forEach(r=>{if(r.ativo&&counts[r.status]!==undefined)counts[r.status]++;});summary.innerHTML=`<div class="fleet-status-row"><span>Disponíveis</span><b>${counts.DISPONIVEL}</b></div><div class="fleet-status-row"><span>Em ocorrência</span><b>${counts.EM_OCORRENCIA}</b></div><div class="fleet-status-row"><span>Em manutenção</span><b>${counts.EM_MANUTENCAO}</b></div><div class="fleet-status-row"><span>Inoperantes</span><b>${counts.INOPERANTE}</b></div>`;}
  if(!rows.length){box.innerHTML='<div class="empty">Nenhum recurso cadastrado.</div>';return;}
- box.innerHTML=`<div class="table-wrap"><table><thead><tr><th>Código</th><th>Tipo</th><th>Equipe</th><th>Status</th><th>Descrição</th><th>Ações</th></tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.codigo)}</b></td><td>${esc(r.tipo)}</td><td>${esc(r.equipe||'-')}</td><td><span class="status ${r.status==='DISPONIVEL'?'s-final':'s-ro'}">${esc(r.status)}${r.ativo?'':' • INATIVO'}</span></td><td>${esc(r.descricao||'-')}</td><td><button class="btn btn-light" onclick='openResourceForm(${JSON.stringify(r).replace(/'/g,'&#39;')})'>✏️ Editar</button></td></tr>`).join('')}</tbody></table></div>`;
+ const canManage=session?.role==='ADMIN';
+ box.innerHTML=`<div class="table-wrap"><table><thead><tr><th>Código</th><th>Tipo</th><th>Equipe</th><th>Status</th><th>Descrição</th>${canManage?'<th>Ações</th>':''}</tr></thead><tbody>${rows.map(r=>`<tr><td><b>${esc(r.codigo)}</b></td><td>${esc(r.tipo)}</td><td>${esc(r.equipe||'-')}</td><td><span class="status ${r.status==='DISPONIVEL'?'s-final':r.status==='EM_MANUTENCAO'?'s-med':'s-ro'}">${esc(r.status)}${r.ativo?'':' • INATIVO'}</span></td><td>${esc(r.descricao||'-')}</td>${canManage?`<td><button class="btn btn-light" onclick='openResourceForm(${JSON.stringify(r).replace(/'/g,'&#39;')})'>✏️ Editar</button></td>`:''}</tr>`).join('')}</tbody></table></div>`;
 }
+
 function openResourceForm(resource=null){
  if(session?.role!=='ADMIN')return;
  const r=resource||{};
@@ -1605,41 +1885,43 @@ function tarmOccurrenceForm(){
      <button id="modeTrote" class="btn btn-light" onclick="setOccType('TROTE')">⚠ TROTE</button>
      <button id="modeTransferencia" class="btn btn-light" onclick="setOccType('TRANSFERENCIA')">↔ TRANSFERÊNCIA</button>
      <button id="modeTransporte" class="btn btn-light" onclick="setOccType('TRANSPORTE')">🚑 TRANSPORTE</button>
+     <button id="modeEngano" class="btn btn-light" onclick="setOccType('ENGANO')">⚠ ENGANO</button>
+     <button id="modeInformacoes" class="btn btn-light" onclick="setOccType('INFORMACOES')">ℹ INFORMAÇÕES</button>
    </div>
 
    <div class="tarm-form-columns">
      <section class="tarm-form-panel">
        <div class="tarm-panel-title"><div class="tarm-panel-icon">☎</div><div><h3>Informações da ocorrência</h3><p>Dados da solicitação e localização.</p></div></div>
        <div class="form-grid">
-         <div><label>Telefone do solicitante <span style="color:var(--red)">*</span></label><input id="fTel" inputmode="numeric" maxlength="16" placeholder="(96) 9 XXXX-XXXX" oninput="maskPhone(this);validateTarmForm()"><small id="phoneHint" class="field-hint">Use o formato (96) 9 XXXX-XXXX.</small></div>
-         <div><label>Solicitante <span style="color:var(--red)">*</span></label><input id="fSol" placeholder="Nome de quem solicita" oninput="validateTarmForm()"></div>
-         <div><label>Cidade <span style="color:var(--red)">*</span></label><select id="fCidade" onchange="validateTarmForm()"><option value="">Selecione</option>${['Amapá','Calçoene','Cutias','Ferreira Gomes','Itaubal','Laranjal do Jari','Macapá','Mazagão','Oiapoque','Pedra Branca do Amapari','Porto Grande','Pracuúba','Santana','Serra do Navio','Tartarugalzinho','Vitória do Jari'].map(x=>`<option>${x}</option>`).join('')}</select></div>
-         <div><label>Natureza <span style="color:var(--red)">*</span></label><input id="fNatureza" placeholder="Ex.: acidente, mal súbito, queda..." oninput="validateTarmForm()"></div>
-         <div class="full"><label>Endereço <span style="color:var(--red)">*</span></label><input id="fEndereco" placeholder="Rua, avenida, rodovia..." oninput="validateTarmForm()"></div>
+         <div><label>Telefone do solicitante <span style="color:var(--red)">*</span></label><input id="fTel" inputmode="numeric" maxlength="16" placeholder="(96) 9 XXXX-XXXX" oninput="maskPhone(this);validateTarmForm()"><small id="phoneHint" class="field-hint">Único campo obrigatório para iniciar o registro.</small></div>
+         <div><label>Solicitante</label><input id="fSol" placeholder="Nome de quem solicita" oninput="validateTarmForm()"></div>
+         <div><label>Cidade</label><select id="fCidade" onchange="validateTarmForm()"><option value="">Selecione</option>${['Amapá','Calçoene','Cutias','Ferreira Gomes','Itaubal','Laranjal do Jari','Macapá','Mazagão','Oiapoque','Pedra Branca do Amapari','Porto Grande','Pracuúba','Santana','Serra do Navio','Tartarugalzinho','Vitória do Jari'].map(x=>`<option>${x}</option>`).join('')}</select></div>
+         <div><label>Natureza</label><input id="fNatureza" placeholder="Ex.: acidente, mal súbito, queda..." oninput="validateTarmForm()"></div>
+         <div class="full"><label>Endereço</label><input id="fEndereco" placeholder="Rua, avenida, rodovia..." oninput="validateTarmForm()"></div>
          <div><label>Bairro</label><input id="fBairro" placeholder="Bairro"></div>
          <div><label>Número</label><input id="fNumero" placeholder="Número"></div>
          <div class="full"><label>Complemento / referência</label><input id="fComplemento" placeholder="Ponto de referência, complemento, localização..."></div>
-         <div class="full"><label>Descrição inicial <span style="color:var(--red)">*</span></label><textarea id="fDescricao" placeholder="Relato inicial do solicitante..." oninput="validateTarmForm()"></textarea></div>
+         <div class="full"><label>Descrição inicial</label><textarea id="fDescricao" placeholder="Relato inicial do solicitante..." oninput="validateTarmForm()"></textarea></div>
        </div>
      </section>
 
      <section class="tarm-form-panel tarm-patient-panel">
        <div class="tarm-panel-title"><div class="tarm-panel-icon patient">●</div><div><h3>Dados do paciente</h3><p>Identificação do paciente principal.</p></div></div>
        <div class="form-grid">
-         <div class="full"><label>Nome do paciente <span class="patient-required" style="color:var(--red)">*</span></label><input id="fPac" placeholder="Nome completo" oninput="validateTarmForm()"></div>
-         <div><label>Idade <span class="patient-required" style="color:var(--red)">*</span></label><input id="fIdade" type="number" min="0" max="120" placeholder="Idade" oninput="updateAgeGroup();validateTarmForm()"></div>
-         <div><label>Sexo <span class="patient-required" style="color:var(--red)">*</span></label><select id="fSexo" onchange="validateTarmForm()"><option value="">Selecione</option><option value="MASCULINO">Masculino</option><option value="FEMININO">Feminino</option><option value="NAO_INFORMADO">Não informado</option></select></div>
+         <div class="full"><label>Nome do paciente</label><input id="fPac" placeholder="Nome completo" oninput="validateTarmForm()"></div>
+         <div><label>Idade</label><input id="fIdade" type="number" min="0" max="120" placeholder="Idade" oninput="updateAgeGroup();validateTarmForm()"></div>
+         <div><label>Sexo</label><select id="fSexo" onchange="validateTarmForm()"><option value="">Selecione</option><option value="MASCULINO">Masculino</option><option value="FEMININO">Feminino</option><option value="NAO_INFORMADO">Não informado</option></select></div>
          <div><label>Faixa etária</label><select id="fFaixa" disabled><option value="">Será calculada pela idade</option><option value="RECEM_NASCIDO">Recém-nascido</option><option value="CRIANCA">Criança</option><option value="ADOLESCENTE">Adolescente</option><option value="ADULTO">Adulto</option><option value="IDOSO">Idoso</option></select></div>
        </div>
        <div class="actions" style="margin-top:12px"><button class="btn btn-light" onclick="addPatientRow()">＋ Adicionar paciente</button></div>
        <div id="extraPatients"></div>
 
        <div class="tarm-submit-box">
-         <div class="tarm-panel-title compact"><div class="tarm-panel-icon doctor">⚕</div><div><h3>Encaminhamento</h3><p>Selecione o Médico Regulador antes de enviar.</p></div></div>
+         <div class="tarm-panel-title compact"><div class="tarm-panel-icon doctor">⚕</div><div><h3>Encaminhamento</h3><p>O encaminhamento pode ser definido agora ou posteriormente.</p></div></div>
          <label>Médico Regulador <span style="color:var(--muted);font-weight:500">(opcional)</span></label>
          <select id="fMedico"><option value="">Carregando médicos...</option></select>
          <small class="field-hint">Se nenhum médico for selecionado, a ocorrência será enviada para a fila de regulação.</small>
-         <div id="tarmFormMessage" class="alert alert-warn" style="margin-top:13px">Preencha os campos obrigatórios para registrar a ocorrência.</div>
+         <div id="tarmFormMessage" class="alert alert-warn" style="margin-top:13px">Informe o telefone para iniciar o registro.</div>
          <button id="btnCreateOccurrence" class="btn btn-blue tarm-submit-btn" disabled onclick="createOccFromTarm()">ENVIAR OCORRÊNCIA</button>
        </div>
      </section>
@@ -1651,9 +1933,23 @@ let currentOccType='OCORRENCIA';
 let extraPatients=[];
 function setOccType(type){
  currentOccType=type;
- ['OCORRENCIA','TROTE','TRANSFERENCIA','TRANSPORTE'].forEach(x=>{const b=document.getElementById('mode'+(x==='OCORRENCIA'?'Ocorrencia':x.charAt(0)+x.slice(1).toLowerCase()));if(b)b.className=x===type?'btn btn-blue':'btn btn-light';});
- const badge=document.getElementById('occModeBadge');if(badge)badge.textContent={OCORRENCIA:'OCORRÊNCIA',TROTE:'TROTE',TRANSFERENCIA:'TRANSFERÊNCIA',TRANSPORTE:'TRANSPORTE'}[type];
- document.querySelectorAll('.patient-required').forEach(x=>x.style.display=type==='TROTE'?'none':'inline');
+ const labels={OCORRENCIA:'OCORRÊNCIA',TROTE:'TROTE',TRANSFERENCIA:'TRANSFERÊNCIA',TRANSPORTE:'TRANSPORTE',ENGANO:'ENGANO',INFORMACOES:'INFORMAÇÕES'};
+ const ids={OCORRENCIA:'modeOcorrencia',TROTE:'modeTrote',TRANSFERENCIA:'modeTransferencia',TRANSPORTE:'modeTransporte',ENGANO:'modeEngano',INFORMACOES:'modeInformacoes'};
+ Object.keys(ids).forEach(x=>{const b=document.getElementById(ids[x]);if(b)b.className=x===type?'btn btn-blue':'btn btn-light';});
+ const badge=document.getElementById('occModeBadge');if(badge)badge.textContent=labels[type]||type;
+ const autoClose=['TROTE','ENGANO','INFORMACOES'].includes(type);
+ const submit=document.getElementById('btnCreateOccurrence');
+ if(submit){
+   submit.textContent=autoClose?'ENCERRAR COMO '+labels[type]:'ENVIAR OCORRÊNCIA';
+   submit.classList.toggle('btn-red',autoClose);
+   submit.classList.toggle('btn-blue',!autoClose);
+   submit.disabled=!phoneValid(document.getElementById('fTel')?.value||'');
+ }
+ const msg=document.getElementById('tarmFormMessage');
+ if(msg && autoClose && phoneValid(document.getElementById('fTel')?.value||'')){
+   msg.className='alert alert-info';
+   msg.textContent='Este registro será encerrado automaticamente como '+labels[type]+'.';
+ }
  validateTarmForm();
 }
 function updateAgeGroup(){
@@ -1662,12 +1958,15 @@ function updateAgeGroup(){
  s.value=v;
 }
 function validateTarmForm(){
- const type=currentOccType,tel=document.getElementById('fTel')?.value||'',sol=document.getElementById('fSol')?.value.trim()||'',cidade=document.getElementById('fCidade')?.value||'',end=document.getElementById('fEndereco')?.value.trim()||'',nat=document.getElementById('fNatureza')?.value.trim()||'',desc=document.getElementById('fDescricao')?.value.trim()||'';
- const pac=document.getElementById('fPac')?.value.trim()||'',idade=document.getElementById('fIdade')?.value||'',sexo=document.getElementById('fSexo')?.value||'';
- const patientOk=type==='TROTE'||(pac&&idade!==''&&Number(idade)>=0&&Number(idade)<=120&&sexo);
- const ok=phoneValid(tel)&&sol&&cidade&&end&&nat&&desc&&patientOk;
+ const tel=document.getElementById('fTel')?.value||'';
+ const ok=phoneValid(tel);
  const b=document.getElementById('btnCreateOccurrence');if(b)b.disabled=!ok;
- const msg=document.getElementById('tarmFormMessage');if(msg){msg.className=ok?'alert alert-info':'alert alert-warn';msg.textContent=ok?'Cadastro completo. A ocorrência poderá ser enviada à Central.':'Preencha telefone, solicitante, cidade, endereço, natureza, descrição e os dados do paciente (exceto em TROTE).';}
+ const msg=document.getElementById('tarmFormMessage');
+ if(msg){
+   const autoClose=['TROTE','ENGANO','INFORMACOES'].includes(currentOccType);
+   msg.className=ok?'alert alert-info':'alert alert-warn';
+   msg.textContent=ok?(autoClose?'Este registro será encerrado automaticamente como '+({TROTE:'TROTE',ENGANO:'ENGANO',INFORMACOES:'INFORMAÇÕES'})[currentOccType]+'.':'Telefone válido. Os demais dados podem ser complementados posteriormente.'):'Informe um telefone válido para iniciar o registro.';
+ }
 }
 function addPatientRow(){
  const box=document.getElementById('extraPatients');if(!box)return;
@@ -1679,7 +1978,7 @@ async function createOccFromTarm(){
  validateTarmForm();
  const btn=document.getElementById('btnCreateOccurrence');
  const msg=document.getElementById('tarmFormMessage');
- if(btn?.disabled){toast('Preencha todos os campos obrigatórios antes de enviar.');return;}
+ if(btn?.disabled){toast('Informe um telefone válido antes de enviar.');return;}
  const setProgress=(text,kind='info')=>{
    if(msg){msg.className='alert '+(kind==='error'?'alert-warn':'alert-info');msg.textContent=text;}
  };
@@ -1695,10 +1994,10 @@ async function createOccFromTarm(){
    natureza=document.getElementById('fNatureza').value.trim(),
    desc=document.getElementById('fDescricao').value.trim(),
    medico=document.getElementById('fMedico')?.value||null;
- const pac=document.getElementById('fPac').value.trim(),
-   idadeVal=document.getElementById('fIdade').value,
-   sexo=document.getElementById('fSexo').value,
-   faixa=document.getElementById('fFaixa').value;
+ const pac=document.getElementById('fPac')?.value.trim()||'',
+   idadeVal=document.getElementById('fIdade')?.value||'',
+   sexo=document.getElementById('fSexo')?.value||'',
+   faixa=document.getElementById('fFaixa')?.value||'';
  if(btn){btn.disabled=true;btn.textContent='ENVIANDO...';}
  try{
    setProgress('1/4 • Validando sessão do usuário...');
@@ -1708,17 +2007,43 @@ async function createOccFromTarm(){
    if(!uid)throw new Error('AUTH: sessão do usuário não encontrada. Faça login novamente.');
 
    setProgress('2/4 • Gravando a ocorrência na Central...');
-   const payload={tipo_atendimento:type,status:type==='TROTE'?'TROTE':'RECEBIDA',telefone:tel,solicitante:sol,cidade,endereco:end,bairro,numero_endereco:num,complemento:compl,natureza,descricao_inicial:desc,medico_id:medico||null,tarm_id:uid,recebida_em:new Date().toISOString(),atualizado_em:new Date().toISOString()};
+   const autoCloseType=['TROTE','ENGANO','INFORMACOES'].includes(type);
+   const nowIso=new Date().toISOString();
+   const payload={
+     tipo_atendimento:type,
+     status:autoCloseType?'ENCERRADA':'RECEBIDA',
+     telefone:tel,
+     solicitante:sol,
+     cidade,
+     endereco:end,
+     bairro,
+     numero_endereco:num,
+     complemento:compl,
+     natureza,
+     descricao_inicial:desc,
+     medico_id:medico||null,
+     tarm_id:uid,
+     recebida_em:nowIso,
+     encerrada_em:autoCloseType?nowIso:null,
+     observacoes_encerramento:autoCloseType?`Registro encerrado automaticamente pelo TARM como ${type}.`:null,
+     atualizado_em:nowIso
+   };
    const {data:o,error:oErr}=await timeout(window.samuSupabase.from('occurrences').insert(payload).select().single(),15000,'INSERT occurrences');
    if(oErr)throw new Error('OCORRÊNCIAS: '+[oErr.message,oErr.code,oErr.details,oErr.hint].filter(Boolean).join(' | '));
    if(!o?.id)throw new Error('OCORRÊNCIAS: o banco não retornou o identificador da ocorrência.');
 
    if(type!=='TROTE'){
-     setProgress('3/4 • Gravando os dados do paciente...');
-     const {data:p,error:pErr}=await timeout(window.samuSupabase.from('patients').insert({nome:pac,idade:Number(idadeVal),sexo,faixa_etaria:faixa}).select().single(),15000,'INSERT patients');
-     if(pErr)throw new Error('PACIENTES: '+[pErr.message,pErr.code,pErr.details,pErr.hint].filter(Boolean).join(' | '));
-     const {error:linkErr}=await timeout(window.samuSupabase.from('occurrence_patients').insert({occurrence_id:o.id,patient_id:p.id,principal:true}),15000,'INSERT occurrence_patients');
-     if(linkErr)throw new Error('VÍNCULO PACIENTE: '+[linkErr.message,linkErr.code,linkErr.details,linkErr.hint].filter(Boolean).join(' | '));
+     setProgress('3/4 • Gravando os dados do paciente, se informados...');
+     if(pac){
+       if(idadeVal==='' || !sexo || !Number.isFinite(Number(idadeVal)) || Number(idadeVal)<0 || Number(idadeVal)>120){
+         throw new Error('Se o paciente for informado, preencha também idade e sexo.');
+       }
+       const faixaPaciente=faixa || (Number(idadeVal)<=0?'RECEM_NASCIDO':Number(idadeVal)<=11?'CRIANCA':Number(idadeVal)<=17?'ADOLESCENTE':Number(idadeVal)<=59?'ADULTO':'IDOSO');
+       const {data:p,error:pErr}=await timeout(window.samuSupabase.from('patients').insert({nome:pac,idade:Number(idadeVal),sexo,faixa_etaria:faixaPaciente}).select().single(),15000,'INSERT patients');
+       if(pErr)throw new Error('PACIENTES: '+[pErr.message,pErr.code,pErr.details,pErr.hint].filter(Boolean).join(' | '));
+       const {error:linkErr}=await timeout(window.samuSupabase.from('occurrence_patients').insert({occurrence_id:o.id,patient_id:p.id,principal:true}),15000,'INSERT occurrence_patients');
+       if(linkErr)throw new Error('VÍNCULO PACIENTE: '+[linkErr.message,linkErr.code,linkErr.details,linkErr.hint].filter(Boolean).join(' | '));
+     }
      const extras=Array.from(document.querySelectorAll('#extraPatients .card')).map(card=>({nome:card.querySelector('[data-extra-name]')?.value.trim(),idade:Number(card.querySelector('[data-extra-age]')?.value),sexo:card.querySelector('[data-extra-sex]')?.value})).filter(x=>x.nome&&Number.isFinite(x.idade)&&x.idade>=0&&x.idade<=120&&x.sexo);
      for(const ex of extras){
        const faixaEx=ex.idade<=0?'RECEM_NASCIDO':ex.idade<=11?'CRIANCA':ex.idade<=17?'ADOLESCENTE':ex.idade<=59?'ADULTO':'IDOSO';
@@ -1730,11 +2055,17 @@ async function createOccFromTarm(){
    }
 
    setProgress('4/4 • Registrando o histórico da ocorrência...');
-   const movement={occurrence_id:o.id,usuario_id:uid,tipo:type==='TROTE'?'TROTE':'CRIADA',descricao:type==='TROTE'?'Trote registrado pela recepção TARM.':'Ocorrência cadastrada pela recepção TARM.'};
+   const movement={
+     occurrence_id:o.id,
+     usuario_id:uid,
+     tipo:type==='TROTE'?'TROTE':(autoCloseType?'OBSERVACAO':'CRIADA'),
+     descricao:autoCloseType?`Registro encerrado automaticamente pela recepção TARM como ${type}.`:`Atendimento classificado como ${type}. Cadastro iniciado pela recepção TARM.`
+   };
    const {error:mErr}=await timeout(window.samuSupabase.from('occurrence_movements').insert(movement),15000,'INSERT occurrence_movements');
    if(mErr)throw new Error('HISTÓRICO: '+[mErr.message,mErr.code,mErr.details,mErr.hint].filter(Boolean).join(' | '));
 
-   toast(`Ocorrência #${o.numero} ${type==='TROTE'?'registrada como TROTE':(medico?'enviada ao Médico Regulador':'enviada para a fila de regulação')}.`);
+   const typeLabels={OCORRENCIA:'OCORRÊNCIA',TROTE:'TROTE',TRANSFERENCIA:'TRANSFERÊNCIA',TRANSPORTE:'TRANSPORTE',ENGANO:'ENGANO',INFORMACOES:'INFORMAÇÕES'};
+   toast(autoCloseType?`Ocorrência #${o.numero} encerrada automaticamente como ${typeLabels[type]||type}.`:`Ocorrência #${o.numero} registrada como ${typeLabels[type]||type}.`);
    occurrencesLoaded=false;extraPatients=[];currentOccType='OCORRENCIA';currentPage='ocorrencias';await loadOccurrences();
  }catch(e){
    console.error('Erro ao criar ocorrência:',e);
@@ -1789,7 +2120,10 @@ function maskPhone(input){
  else if(d.length<=7) input.value='('+d.slice(0,2)+') '+d.slice(2,3)+' '+d.slice(3);
  else input.value='('+d.slice(0,2)+') '+d.slice(2,3)+' '+d.slice(3,7)+'-'+d.slice(7,11);
 }
-function phoneValid(v){return /^\(96\) 9 \d{4}-\d{4}$/.test(v)}
+function phoneValid(v){
+ const digits=String(v||'').replace(/\D/g,'');
+ return digits.length===11 && digits.startsWith('969');
+}
 function validateTarmStart(){
  const tel=document.getElementById('fTel')?.value||'', sol=document.getElementById('fSol')?.value.trim()||'';
  const pac=document.getElementById('fPac')?.value.trim()||'', age=document.getElementById('fIdade')?.value||'';
